@@ -1,4 +1,4 @@
-- name: Payment Setup
+- name: payment Setup
   hosts: all
   become: true
   vars:
