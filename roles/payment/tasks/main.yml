@@ -3,6 +3,7 @@
   become: true
   vars:
     component: payment
+
   tasks:
     - name: Include Python Setup tasks
       ansible.builtin.import_tasks: python.yml
