@@ -5,4 +5,4 @@
     component: payment
   tasks:
     - name: Include Python Setup tasks
-      ansible.builtin.import_tasks: python.yml
+      include_tasks: python.yml
