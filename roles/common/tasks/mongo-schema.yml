@@ -15,5 +15,5 @@
     dest: /app/rds-combined-ca-bundle.pem
 
 - name: Load Schema
-  ansible.builtin.shell:  mongo --ssl --host dev-docdb-cluster.cluster-c762eeqqau0n.us-east-1.docdb.amazonaws.com:27017 --sslCAFile global-bundle.pem --username docdbadmin --password roboshop1234 </app/schema/catalogue.js
+  ansible.builtin.shell:  mongo --ssl --host dev-docdb-cluster.cluster-c762eeqqau0n.us-east-1.docdb.amazonaws.com:27017 --sslCAFile global-bundle.pem --username docdbadmin --password roboshop1234 </app/schema/{{component}}.js
 
