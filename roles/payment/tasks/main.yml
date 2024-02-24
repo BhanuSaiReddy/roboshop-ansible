@@ -1,9 +1,4 @@
-- name: Payment Setup
-  hosts: all
-  become: true
-  vars:
-    component: payment
-
-  tasks:
-    - name: Include Python Setup tasks
-      ansible.builtin.import_tasks: python.yml
+- name: Python Setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: python
